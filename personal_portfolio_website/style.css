@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body,html{
+    box-sizing: border-box;
+    background-image: linear-gradient(to right,rgb(152, 65, 252), rgb(154, 178, 247));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.container .content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0; z-index: 1;
+    height: 100%;
+}
+.container .content-wrapper .main-content{
+    background: linear-gradient(to right bottom,rgba(255,255,255, .7), rgba(255,255,255,.3));
+    border-radius: 20px;
+    border: 1px solid white;
+    width: 75%; height: 75%;
+    padding: 10px 7%; z-index: 1;
+}
+nav .topnav{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    overflow: hidden;
+    background: inherit;
+    
+}
+nav .topnav a{
+    text-decoration: none;
+    padding: 2px 15px;
+    text-align: center; text-transform: uppercase;
+}
+
+nav .topnav .logo_brand{
+    font-size: 20px;
+    font-family: 'Ananda Neptouch';
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+nav .topnav a:not(:first-child){
+    padding: 8px 20px;
+    margin-right: 5px;
+}
+nav .topnav a:hover:not(:first-child){
+    background-color: rgba(12, 12, 97, 0.26);
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    color: white;
+}
+nav .topnav a.active{
+    background-color: rgba(7, 7, 56, 0.493);
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    color: white;
+}
+.main-content .topnav .first{
+    margin-right: 10%;
+}
+.main-content .info {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+} 
+.main-content .info .strenghths {
+    width: 60%; height:30vh;
+    margin-top: -10px;
+    z-index: 2;
+    color: #fff;
+}
+.main-content .info .strengths .salutation {
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+.main-content .info .strengths .job {
+    font-size: 48px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-right: 30px;
+}
+.job{margin-bottom: 25px;}
+.main-content .info .strenghths .job .orange-color{
+    color:rgba(12, 12, 97, 0.26);
+}
+.main-content .info .strengths .qualities{
+    font-size: 20px;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 15px;
+}
+.main-content .info .strengths .buttons-wrapper{
+    margin-top: 10px;
+    z-index: 1;
+}
+.main-content .info .strengths .buttons-wrapper button{
+    padding: 12px 30px;
+    border-radius: 5px; font-size: 15px;
+    cursor: pointer;outline: none;
+}
+.main-content .info .strengths .buttons-wrapper .transparent-button{
+    background-color: inherit;
+    border: 1px solid white;
+    margin-left: 10px;color: white;
+    z-index: 1;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.main-content .info .strengths .buttons-wrapper .transparent-button:hover {
+    background-color: rgba(12, 12, 97, 0.26);
+    color: white;
+    border: 1px solid rgba(12, 12, 97, 0.26);
+    transition: all 0.3s ease;
+}
+.circle1,.circle2{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255, .9), rgba(255,255,255,.1));
+    height: 10rem; width: 10rem;
+    position:absolute; border-radius: 50%;
+}
+.circle1{
+    top: 5%; left: 1%;
+}
+.circle2{
+    bottom: 2%; right: 8%;
+}
+.main-content .info .strengths .arrow-wrapper .arrow-down {
+    
+    position: absolute;
+    margin-top: 100px;
+    z-index: 4;
+    animation: mover 0.8s infinite  alternate;   
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+.main-content .info .picture {
+    width: 32%;
+    height: 46vh;
+    border: 7px solid rgba(12, 12, 97, 0.16);
+    background-color: rgba(12, 12, 97, 0.26);
+    border-radius: 50%;
+    margin-right: -1px;
+    z-index: 3;
+}
+.main-content .info .picture .pose-pic {
+    z-index: 5;
+    height: 60vh;
+    float: right;
+    margin: 3.7vh 2vh 0px 0px;
+}
